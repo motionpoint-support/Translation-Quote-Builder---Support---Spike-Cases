@@ -240,7 +240,6 @@
       <span class="eyebrow">Retail Support Pricing · 2026</span>
       <div class="title-row">
         <h1>Translation Quote Builder</h1>
-        <button class="admin-btn" id="btnAdmin">Admin</button>
       </div>
       <div class="sub">Client-specific word rates for estimate & quote creation</div>
     </div>
@@ -1038,14 +1037,6 @@ btnDownloadUpdated.addEventListener('click', ()=>{
 });
 
 /* ---- Admin panel ---- */
-const adminModalBg = document.getElementById('adminModalBg');
-const btnAdmin = document.getElementById('btnAdmin');
-
-function openAdmin(){ adminModalBg.classList.add('open'); }
-function closeAdmin(){ adminModalBg.classList.remove('open'); }
-btnAdmin.addEventListener('click', openAdmin);
-document.getElementById('adminModalClose').addEventListener('click', closeAdmin);
-adminModalBg.addEventListener('click', e=>{ if(e.target===adminModalBg) closeAdmin(); });
 </script>
 </body>
 </html>
